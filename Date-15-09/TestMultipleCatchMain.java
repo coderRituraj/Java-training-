@@ -1,11 +1,16 @@
-package Com.bhavna.task1;
+package Com.bhavna.task2;
+
+import java.util.Scanner;
 
 public class TestMultipleCatchMain {
 
 	public static void main(String[] args) {
-		MultipleCatch obj = new MultipleCatch();
-		obj.division(20, 12);
-		obj.division(12, 0);
+		// TODO Auto-generated method stub
+		MultipleCatchDemo  object = new MultipleCatchDemo ();
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter your choice here \n1 For Array \n2 For Arthematics \n3 for Work on file");
+		int choice= sc.nextInt();
+		object.display(choice);
 
 	}
 
