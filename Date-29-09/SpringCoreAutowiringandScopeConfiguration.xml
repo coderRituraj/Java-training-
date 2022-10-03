@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<bean id="departmentObj" class="Com.Bhavna.SpringCore.Department">
+		<constructor-arg value="1000" index="0"></constructor-arg>
+		<constructor-arg value="Developer" index ="1"></constructor-arg>
+
+	</bean>
+
+	<bean id ="companyObj" class="Com.Bhavna.SpringCore.Company">
+	<constructor-arg value="1001" index="0"></constructor-arg>
+	<constructor-arg value="Bhavna Technolog" index="1"></constructor-arg>
+	<property name="pincodeAndCity">
+		<map>
+			<entry key="119907" value="Phase 3">
+			</entry>
+		</map>
+	</property>
+	<property name="cotactNumber">
+		<list>
+			<value>9999999</value>
+			<value>8302222</value>
+		</list>
+	</property>
+	<constructor-arg ref="departmentObj"></constructor-arg>
+</bean>
+
+</beans>

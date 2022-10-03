@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="studentObj" class="Com.Bhavna.SpringCore.Student">
+		<property name="rollNumber" value="180219"></property>
+		<property name="name" value="Mohit"></property>
+		<property name="salary" value="20000"></property>
+	</bean>
+
+	<bean id="examObj" class="Com.Bhavna.SpringCore.Exam">
+		<property name="eId" value="1001"></property>
+		<property name="name" value="Somit"></property>
+		<property name="marks" value="450"></property>
+	</bean>
+	<bean id="studentObj1" class="Com.Bhavna.SpringCore.Student">
+		<constructor-arg value="133288"></constructor-arg>
+		<constructor-arg value="Lilly"></constructor-arg>
+		<constructor-arg value="50000"></constructor-arg>
+
+	</bean>
+
+	<bean id="examObj1" class="Com.Bhavna.SpringCore.Exam">
+		<constructor-arg value="1002"></constructor-arg>
+		<constructor-arg value="Sam"></constructor-arg>
+		<constructor-arg value="235"></constructor-arg>
+
+	</bean>
+
+
+</beans>
